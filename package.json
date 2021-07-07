@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-iter-mmean",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Create an iterator which iteratively computes a moving arithmetic mean.",
   "license": "Apache-2.0",
   "author": {
