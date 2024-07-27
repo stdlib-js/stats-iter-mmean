@@ -58,14 +58,32 @@ For a window of size `W`, the [arithmetic mean][arithmetic-mean] is defined as
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-iter-mmean
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import itermmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmean@esm/index.mjs';
+var itermmean = require( '@stdlib/stats-iter-mmean' );
 ```
 
 #### itermmean( iterator, W )
@@ -73,7 +91,7 @@ import itermmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmean@es
 Returns an [iterator][mdn-iterator-protocol] which iteratively computes a moving [arithmetic mean][arithmetic-mean]. The `W` parameter defines the number of iterated values over which to compute the moving mean.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 2.0, 1.0, 3.0, -7.0, -5.0 ] );
 var it = itermmean( arr, 3 );
@@ -121,14 +139,9 @@ m = it.next().value; // [3.0, -7.0, -5.0]
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
-import itermmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmean@esm/index.mjs';
+```javascript
+var runif = require( '@stdlib/random-iter-uniform' );
+var itermmean = require( '@stdlib/stats-iter-mmean' );
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
@@ -150,10 +163,6 @@ while ( true ) {
         console.log( 'Mean: %d', v.value );
     }
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -192,7 +201,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -222,8 +231,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-iter-mmean.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-iter-mmean
 
-[test-image]: https://github.com/stdlib-js/stats-iter-mmean/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/stats-iter-mmean/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/stats-iter-mmean/actions/workflows/test.yml/badge.svg?branch=v0.2.2
+[test-url]: https://github.com/stdlib-js/stats-iter-mmean/actions/workflows/test.yml?query=branch:v0.2.2
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-iter-mmean/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-iter-mmean?branch=main
@@ -261,9 +270,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/iter/mean]: https://github.com/stdlib-js/stats-iter-mean/tree/esm
+[@stdlib/stats/iter/mean]: https://github.com/stdlib-js/stats-iter-mean
 
-[@stdlib/stats/iter/msum]: https://github.com/stdlib-js/stats-iter-msum/tree/esm
+[@stdlib/stats/iter/msum]: https://github.com/stdlib-js/stats-iter-msum
 
 <!-- </related-links> -->
 
