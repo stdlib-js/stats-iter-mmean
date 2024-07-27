@@ -67,6 +67,11 @@ For a window of size `W`, the [arithmetic mean][arithmetic-mean] is defined as
 To use in Observable,
 
 ```javascript
+itermmean = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmean@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-iter-mmean/tags). For example,
+
+```javascript
 itermmean = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmean@v0.2.2-umd/browser.js' )
 ```
 
@@ -79,7 +84,7 @@ var itermmean = require( 'path/to/vendor/umd/stats-iter-mmean/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmean@v0.2.2-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmean@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -150,7 +155,7 @@ m = it.next().value; // [3.0, -7.0, -5.0]
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmean@v0.2.2-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmean@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
