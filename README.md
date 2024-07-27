@@ -65,7 +65,7 @@ For a window of size `W`, the [arithmetic mean][arithmetic-mean] is defined as
 ## Usage
 
 ```javascript
-import itermmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmean@deno/mod.js';
+import itermmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmean@v0.2.2-deno/mod.js';
 ```
 
 #### itermmean( iterator, W )
@@ -123,7 +123,7 @@ m = it.next().value; // [3.0, -7.0, -5.0]
 
 ```javascript
 import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
-import itermmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmean@deno/mod.js';
+import itermmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmean@v0.2.2-deno/mod.js';
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
