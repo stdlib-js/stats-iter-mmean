@@ -160,7 +160,7 @@ while ( true ) {
         break;
     }
     if ( typeof v.value === 'number' ) {
-        console.log( 'Mean: %d', v.value );
+        console.log( 'mean: %d', v.value );
     }
 }
 ```
